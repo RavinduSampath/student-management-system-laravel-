@@ -21,7 +21,13 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'photo',
+        'phone',
+        'address',
+        'role',
+        'status',
     ];
+    // protected $guarded = []; meken table eke thiyan okkom feild tika fillable karanna puluwan
 
     /**
      * The attributes that should be hidden for serialization.
