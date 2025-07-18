@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
-
+use App\Http\Controllers\studentController;
 
 Route::get('/about', [PageController::class, 'about']);
 
@@ -23,3 +23,6 @@ Route::get('/hello', function () {
 
 
 Route::get('/about', [PageController::class, 'about']);
+
+
+Route::resource('students', studentController::class);
